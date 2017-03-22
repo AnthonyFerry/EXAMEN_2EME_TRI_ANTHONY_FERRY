@@ -1,0 +1,7 @@
+CLIENT (id_client, prenom, nom, code_postal, ville, rue)  
+PROJET (id_projet, nom_projet, categorie_projet, description_projet, date_debut, date_fin, budget)  
+TACHE (id_tache, libelle_tache, deadline, statut_tache, #id_projet)  RESSOURCE (id_ressource, type_ressource)  
+NOTE (id_note, libelle_note, contenu_note, #id_projet, #id_utilisateur)  
+UTILISATEUR (id_utilisateur, nom_utilisateur, prenom_utilisateur, mail_utilisateur, passe_utilisateur)  
+CLIENT_PROJET (id_client, id_projet)  RESSOURCE_PROJET (id_ressource, id_projet, montant_ressource)  
+UTILISATEUR_TACHE (id_utilisateur, id_tache)  UTILISATEUR_PROJET (id_projet, id_utilisateur) 
